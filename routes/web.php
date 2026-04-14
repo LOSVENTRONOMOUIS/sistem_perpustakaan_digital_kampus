@@ -6,10 +6,21 @@ use App\Http\Controllers\ListBarangController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\Praktikum4Controller;
 
 Route::get('/welcome', function () {
     return view('welcome');
 });
+Route::view('/home', 'home');
+// Route::view('/dashboard', 'dashboard')->name('dashboard');
+Route::view('/katalog', 'katalog_buku');
+Route::view('/peminjaman', 'data_peminjaman')->name('peminjaman');
+Route::view('/list', 'list_barang');
+Route::view('/login', 'login');
+Route::view('/profile', 'Profile');
+Route::view('/contact', 'contact');
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::get('/user/{id}', function ($id) {
     return 'user dengan ID ' . $id;
@@ -35,3 +46,4 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/katalog', [BukuController::class, 'index']);
+Route::get('/praktikum4', [Praktikum4Controller::class, 'getData']);

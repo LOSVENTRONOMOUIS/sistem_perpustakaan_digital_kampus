@@ -156,10 +156,10 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <h2>📚 E-Library</h2>
-        <a href="dashboard.blade.php" >Dashboard</a>
-        <a href="#">Katalog Buku</a>
-        <a href="#" class="active">Data Peminjaman</a>
-        <a href="#">Pengaturan</a>
+        <a href="{{ url('dashboard') }}" >Dashboard</a>
+        <a href="{{ url('katalog') }}">Katalog Buku</a>
+        <a href="{{ url('peminjaman') }}" class="active">Data Peminjaman</a>
+        <a href="{{ url('profile') }}">Pengaturan</a>
         <a href="#" style="margin-top: 50px; color: #e74c3c;">Keluar</a>
     </div>
 

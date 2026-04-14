@@ -106,11 +106,11 @@
 
     <div class="sidebar">
         <h2>📚 E-Library</h2>
-        <a href="#" class="active">Dashboard</a>
-        <a href="#">Katalog Buku</a>
-        <a href="#">Data Peminjaman</a>
-        <a href="#">Pengaturan</a>
-        <a href="/login" style="margin-top: 50px; color: #e74c3c;">Keluar</a>
+        <a href="{{ url('dashboard') }}" class="active">Dashboard</a>
+        <a href="{{ url('katalog') }}">Katalog Buku</a>
+        <a href="{{ url('peminjaman') }}">Data Peminjaman</a>
+        <a href="{{ url('profile') }}">Pengaturan</a>
+        <a href="#" style="margin-top: 50px; color: #e74c3c;">Keluar</a>
     </div>
 
     <div class="main-content">
