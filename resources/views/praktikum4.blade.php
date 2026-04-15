@@ -6,6 +6,7 @@
     <title>Praktikum 4 & 5</title>
     
     <link rel="stylesheet" href="{{ asset('styles/style_nafis.css') }}">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
 
