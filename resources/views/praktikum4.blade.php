@@ -33,5 +33,8 @@
         </tbody>
     </table>
 
+    <div class="bg-blue-500 text-white p-4 mt-4">
+        Ini adalah div dengan background biru dan teks putih menggunakan Tailwind CSS.
+    </div>
 </body>
 </html>
