@@ -23,6 +23,6 @@ class IndahP4Controller extends Controller
     public function tampilkan()
     {
         $data = $this->getData();
-        return view('indahP4', compact('data'));
+        return view('indahP4&P5', compact('data'));
     }
 }

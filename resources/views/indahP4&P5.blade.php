@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Data Buku</title>
+    <title>Halaman Indah</title>
+    <link rel="stylesheet" href="{{ asset('styles/style_indah.css') }}">
 </head>
 <body>
+
+<h1>Galeri Gambar</h1>
+
+<img src="{{ asset('images/P1_view.jpg') }}" alt="gambar1">
+<img src="{{ asset('images/P2_pantai.jpg') }}" alt="gambar2">
+
+<hr>
 
 <h2>Daftar Buku</h2>
 
