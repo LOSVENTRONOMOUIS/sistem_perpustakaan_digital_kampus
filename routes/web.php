@@ -7,6 +7,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\Praktikum4Controller;
+use App\Http\Controllers\IndahP4Controller;
 
 Route::get('/welcome', function () {
     return view('welcome');
@@ -47,3 +48,4 @@ Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/katalog', [BukuController::class, 'index']);
 Route::get('/praktikum4', [Praktikum4Controller::class, 'getData']);
+Route::get('/indahP4', [IndahP4Controller::class, 'tampilkan']);
